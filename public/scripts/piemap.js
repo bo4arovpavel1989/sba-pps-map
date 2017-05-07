@@ -32,6 +32,7 @@ function showOnMap(){
 
 function getPoints(bks, callback){
 	var counter = bks.length;
+	points=[];
 	bks.forEach(function(bk){
 	$.ajax({
 		url: '/bkpps/ppscoordinates' + bk + '.json',
